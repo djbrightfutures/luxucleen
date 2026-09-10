@@ -17,7 +17,9 @@
        font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
   .wrap{max-width:880px;margin:0 auto;padding:0 22px}
   header{border-bottom:1px solid var(--line);background:var(--soft);position:sticky;top:0;z-index:5}
-  .bar{display:flex;align-items:center;gap:16px;padding:16px 0;flex-wrap:wrap}
+  /* vertical only. A `padding` shorthand here overrides .wrap's 22px side padding and puts
+     the brand and the nav flush against the edge of a phone screen. Measured, then fixed. */
+  .bar{display:flex;align-items:center;gap:16px;padding-top:16px;padding-bottom:16px;flex-wrap:wrap}
   .brand{font-size:21px;font-weight:800;letter-spacing:.2px}
   .brand span{color:var(--accent)}
   nav{margin-left:auto;display:flex;gap:16px;flex-wrap:wrap}
